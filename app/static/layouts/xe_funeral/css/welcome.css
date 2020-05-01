@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+.welcomeXE {font-family:'NanumBarunGothic',"나눔바른고딕", 'dotum',"돋움",sans-serif;}
+
+.content + .welcomeXE {
+    padding-top: 0;
+}
+.brown{color:#ff5722;font-weight:normal;}
+
+.welcomeXE section {width:100%;margin: 0 auto}
+.welcomeXE .tit {display:block;margin-bottom:15px;color:#333;font-size:24px;}
+.welcomeXE .tit_txt {width: 100%;background: url(../img/sub_tit_line.gif) repeat-x left 12px;}
+.welcomeXE .tit_txt strong{display: inline-block;background: #fff;padding-right: 20px;color:rgba(0, 0, 0, 0.5); font-family: nsm;font-size:14px;letter-spacing:-1px;line-height:24px;font-weight: normal;}
+.welcomeXE .intro_c {width:100%;}
+.welcomeXE .intro_c P {font-size:16px;font-weight: 400;color:#707070;line-height: 22px;text-align: left;letter-spacing:-0.5px;}
+.welcomeXE .intro_c h3 {font-size:16px;font-weight:normal;color:#888;}
+.welcomeXE .noti {display:block;padding: 28px 0 0;margin: 0 0 12px;font-size: 14px;font-weight: bold;color: #cda25a;letter-spacing: 1px;line-height: 20px}
+.welcomeXE .intro {width:100%;}
+.welcomeXE .intro .cont {display:inline-block;padding-bottom:37px;font-size:18px;font-weight: 400;color:#888;line-height:38px}
+
+
+.title-container {display:inline-block;margin:0 0 40px 0;padding:0;width:100%;overflow:hidden;position:relative;text-align:center;}
+.title-container h1 {display: inline-block; color:#888;font-size:12pt;margin:0;font-weight: normal;}
+.title-container h4 {display:block;margin:0;font-size:36px;color:#000;letter-spacing:-2px;}
+.title-container span {display:block;color:#888;font-size:11pt;line-height: 32px;}
+
+#box_int {position:relative;overflow:hidden;width:1300px;margin: 45px 0 0;}
+#box_int .boxone_int {overflow:hidden;list-style:none;margin:0;padding:0;}
+#box_int .boxone_int li {float:left; width:29.1%;margin:0 30px 50px 0;box-sizing: border-box;}
+#box_int .boxone_int li h3{font-size:20px;color:#333;text-align:center;font-family:'NanumSquare';line-height:48px;letter-spacing:-0.5px;}
+#box_int .boxone_int li span {font-family:'NanumSquare';font-size:14px;letter-spacing: -0.5px;color:#7c7c7c;}
+
+#box_int02 {position:relative;overflow:hidden;width:1200px;margin: 0 0;}
+#box_int02 .boxone_int {overflow:hidden;list-style:none;margin:0;padding:0;}
+#box_int02 .boxone_int li {float:left; width:100%;margin:50px 0;border: 10px solid #ED1B23;box-sizing: border-box;padding: 0 50px 0 0;}
+#box_int02 .boxone_int li:first-child {margin-top: 0;}
+#box_int02 .boxone_int li h3{margin: 70px 0 20px;font-size:30px;color:#333;text-align:center;font-family:'NanumSquare';line-height:48px;letter-spacing:-0.5px;}
+#box_int02 .boxone_int li span {font-family:'NanumSquare';font-size:20px;color:#7c7c7c;}
+#box_int02 .boxone_int li img {max-width:40%;float:left;padding-right: 50px;}
+
+
+/* section.features */
+.welcomeXE .features {width:100%;margin:30px 0;padding:0;}
+.welcomeXE .features .noti,
+.welcomeXE .features .tit,
+.welcomeXE .features .cont {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+.welcomeXE .features .tit {color: #ED1B23}
+.welcomeXE .features .cont {font-size:20px;line-height:30px;text-align:center;color: #000}
+.welcomeXE .features ul {
+    overflow: hidden;
+    margin-top: 38px;
+    padding: 0 20px
+}
+.welcomeXE .features li {float: left;width: 25%;}
+.welcomeXE .features li .fe_box {
+    padding: 5px 5px;
+    background-color: #f6f6f6;
+    text-align: center;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+ 
+.welcomeXE .features .fe_box .ico {
+    display: inline-block;
+    width:100%;
+    height: auto;
+    margin: 30px 0;
+    background-color: #cda25a;
+    background: url(../img/sp_feature.png) 0 0 no-repeat;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px
+}
+.welcomeXE .features .fe_box h2 {font-size: 18px;color: #ed1b23;line-height: 50px;font-family: 'NanumSquare';}
+.welcomeXE .features .fe_box p {margin: 0 auto 20px;font-size: 14px;line-height: 24px;color: #888888;width:85%;}
+.welcomeXE .features .fe_box a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 40px;
+    border: 2px solid #888888;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #888888;
+    line-height: 40px;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.welcomeXE .features .fe_box a:hover {
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+    color: #ED1B23
+}
+.welcomeXE .features .fe_top {
+    position: relative;
+	background-color: #f6f6f6;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+.welcomeXE .features .fe_top img {width:100%}
+.welcomeXE .features .fe_bottom {
+    position: relative;
+    background-color: #f6f6f6;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+.welcomeXE .features .fe_box.on {
+    background-color: #ED1B23
+}
+
+.welcomeXE .features .fe_box.on a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 40px;
+    border: 2px solid #f6f6f6;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #888888;
+    line-height: 40px;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.welcomeXE .features .fe_box.on h2 {
+    color: #ED1B23;
+}
+
+.welcomeXE .features .fe_box .ico2 {
+    background-position: -70px 0
+}
+.welcomeXE .features .fe_box .ico3 {
+    background-position: -140px 0
+}
+.welcomeXE .features .fe_box .ico4 {
+    background-position: -210px 0
+}
+.welcomeXE .features .fe_box.on .ico2 {
+    background-position: -70px -70px
+}
+.welcomeXE .features .fe_box.on .ico3 {
+    background-position: -140px -70px
+}
+.welcomeXE .features .fe_box.on .ico4 {
+    background-position: -210px -70px
+}

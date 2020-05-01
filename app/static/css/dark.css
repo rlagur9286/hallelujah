@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.s_header{/*컬러*/ background:url(../images/dark/s_header_bg.jpg) no-repeat;}
+.account{ /*컬러*/background:url(../images/dark/login_bg.png) no-repeat center top;}
+.loginWindow .loginLayer .loginButton{ background-image:url(../images/dark/log_btn.jpg); background-repeat:no-repeat;}
+
+.language ul{color:#fff; background-color:#323232;}
+
+.account li.profile .memberProfile{ border:1px solid #323232;}
+.account li.profile .memberProfile .authorName{color:#323232;}
+.account li.profile .memberProfile .authorName a{color:#323232;}
+.account li.profile .memberProfile li a{color:#323232;}
+
+.sub_title1{color:#323232;}
+.sub_title2{color:#323232;}
+/*메인메뉴*/
+#gnb .a1 {color:#999;}
+#gnb .a1:hover,
+#gnb .a1:focus {color:#323232;}
+#gnb .ul2 {border-bottom:1px solid #999;}
+#gnb .ul2 li {border-left:1px solid #999; border-right:1px solid #999;}
+#gnb .ul2 a {border-top:1px solid #999;  color:#323232;}
+#gnb .ul2 a:hover,
+#gnb .ul2 a:focus { background-color:#323232; color:#FFFFFF; }
+#gnb .on2 .a2,
+#gnb .on3 .a3 {  background-color:#323232; color:#FFFFFF; }
+#gnb .ul2 ul {border-bottom:1px solid #999;}
+
+/*사이드메뉴*/
+.lnb h2 a{color:#323232;}
+.locNav li a:hover,
+.locNav li.active a{color:#fff;background:#FD6625;}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">Font Awesome 5</title>
+	<description xml:lang="ko">
+		Font Awesome 5을 불러오는 애드온입니다.
+	</description>
+	<version>1.0.1</version>
+	<date>2018-08-22</date>
+
+	<author email_address="admin@wincomi.com" link="https://www.wincomi.com/">
+		<name xml:lang="ko">코미</name>
+	</author>
+
+	<extra_vars>
+		<group>
+			<title xml:lang="ko">기본</title>
+			<var name="fa_pro" type="select">
+				<title xml:lang="ko">Pro 버전</title>
+				<description xml:lang="ko">Pro 버전 사용을 위하여 ./addons/fontawesome5/pro 경로에 Font Awesome Pro 파일을 추가하세요.</description>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="Y">
+					<title xml:lang="ko">사용</title>
+				</options>
+			</var>
+			<var name="fa_icon_prefix" type="select">
+				<title xml:lang="ko">아이콘 스타일</title>
+				<description xml:lang="ko">Free 버전일 경우 Solid 선택을 권장합니다. 지원하는 레이아웃의 경우 아이콘 스타일이 변경됩니다. 레이아웃 내에서 {$fa_prefix}로 사용할 수 있습니다.</description>
+				<options value="fas">
+					<title xml:lang="ko">Solid</title>
+				</options>
+				<options value="far">
+					<title xml:lang="ko">Regular</title>
+				</options>
+				<options value="fal">
+					<title xml:lang="ko">Light</title>
+				</options>
+			</var>
+		</group>
+		<group>
+			<title xml:lang="ko">고급</title>
+			<var name="fa_load_type" type="select">
+				<title xml:lang="ko">동작 방식</title>
+				<description xml:lang="ko">https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css&amp;explain=using</description>
+				<options value="js">
+					<title xml:lang="ko">SVG &amp; JS</title>
+				</options>
+				<options value="css">
+					<title xml:lang="ko">Web Fonts &amp; CSS</title>
+				</options>
+			</var>
+		</group>
+	</extra_vars>
+</addon>
