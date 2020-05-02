@@ -16,10 +16,16 @@
     <link href="{% static "css/prettyPhoto-link.css" %}" rel="stylesheet">
     <link href="{% static "css/outdatedbrowser.min.css" %}" rel="stylesheet">
     <link href="{% static "css/layout.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
     <!-- JS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="{% static "lib/jquery-ui-1.12.1/jquery-ui.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/jquery-contextMenu/jquery.contextMenu.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/json-browse/jquery.json-browse.css" %}" rel="stylesheet">
     <script src="{% static "lib/jquery-ui-1.12.1/jquery-ui.min.js" %}"></script>
     <script href="{% static "js/jquery.min.js" %}" rel="stylesheet"></script>
     <script href="{% static "js/jquery-1.x.min.js" %}" rel="stylesheet"></script>
@@ -33,17 +39,16 @@
     <link href="{% static "js/jquery.prettyPhoto.min.js" %}" rel="stylesheet">
     <link href="{% static "js/jquery.prettyPhoto.js" %}" rel="stylesheet">
     <!-- ICON -->
-    <link rel="shortcut icon" href="http://www.hallelujah.co.kr/files/attach/xeicon/favicon.ico"/>
     <meta name="naver-site-verification" content="a8f6ea8af37d33f567386875925ae79b3aaaacff"/>
     <style> .xe_content {
         font-size: 12px;
     }</style>
-    <link rel="canonical" href="http://www.hallelujah.co.kr/Goyang"/>
+    <link rel="canonical" href="http://www.hallelujah.co.kr/byeokje"/>
     <meta name="keywords" content="납골당,추모공원,수목장,자연장,공원묘지,매장묘,묘지,가격비교"/>
     <meta name="description" content="경기도,고양시,벽제,파주,일산,의정부,양주,송추,장흥,광탄,동두천,연천,크리스찬,추모공원"/>
     <meta property="og:locale" content="ko_KR"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://www.hallelujah.co.kr/Goyang"/>
+    <meta property="og:url" content="http://www.hallelujah.co.kr/byeokje"/>
     <meta property="og:site_name" content="할렐루야추모공원"/>
     <meta property="og:title" content="벽제 기독교관 - 할렐루야추모공원"/>
     <meta property="og:description" content="경기도,고양시,벽제,파주,일산,의정부,양주,송추,장흥,광탄,동두천,연천,크리스찬,추모공원"/>
@@ -347,6 +352,84 @@
             clear: both;
             display: block;
             z-index: 10;
+        }
+        #myImg {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption {
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+          from {transform:scale(0)}
+          to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+          .modal-content {
+            width: 100%;
+          }
         }
     </style>
     <style>.noscript {
@@ -756,8 +839,8 @@
 </script>
 
 <!--메인메뉴끝-->
-<div class="sn_header">
-    <div class="s_header">
+<div class="sn_header" style="background:url({% static "img/sn_header_bg.jpg" %})">
+    <div class="s_header" style="background:url({% static "img/s_header_bg.jpg" %})">
         <h1>
             <a href="./">
                 <img src="{% static "img/logo_2.png" %}" alt="납골당" border="0" style="width:160px; height: 78px;"
@@ -829,7 +912,7 @@
 </div>
 <div class="sn_body">
     <!--바디시작-->
-    <div class="s_body">
+    <div class="s_body" style="background:url({% static "img/s_center_bg.jpg" %})">
         <div>
 
             <div class="s_sub_title">
@@ -851,7 +934,7 @@
             </div>
         </div><!--본문타입시작-->
         <div id="con" style="padding:20px 25px;">
-            <h2><span>할렐루야추모공원 벽제 기독교관</span></h2>
+            <h2 style="font-family: 나눔바른고딕, NanumBarunGothic, NanumBarunGothicOTF; font-size: 18pt; line-height: 36px; text-align:center; color:#00112f;background:url('{% static "img/tit_line.gif" %}') 0 15px repeat-x;*zoom:1;"><span>할렐루야추모공원 벽제 기독교관</span></h2>
             <div class="xe_content xe-widget-wrapper "
                  style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
                 <div style="padding:0px 0px 0px 0px !important;">
@@ -869,7 +952,7 @@
                     </script>
                     <div class="t"><img
                             src="{% static "img/t.png" %}"></div>
-                    <div style="height: 415px;background-image: url(http://www.hallelujah.co.kr/widgets/contentslider/skins/Galleriffic/js/view_bg.gif);margin-bottom:60px">
+                    <div style="height: 415px;background-image: url({% static "img/view_bg.gif" %});margin-bottom:60px">
                         <div id="Galleriffic_818004649_page">
                             <div id="container_Galleriffic_818004649">
                                 <div class="content_Galleriffic_818004649">
@@ -973,12 +1056,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27690">기독교추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/690/027/76f864a5378473d4d42a673db2edb089.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/690/027/270x270.crop.jpg?20150606163343"
+                                <img src="{% static "img/690/027/270x270.crop.jpg" %}"
+                                value="{% static "img/480/690/027/76f864a5378473d4d42a673db2edb089.jpg" %}"
                                      width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto988559930"><a href="27690"></a></p>
                         </div>
@@ -986,12 +1067,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27692">기독교추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/692/027/81af307f60cb7e9385732d7777088504.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/692/027/270x270.crop.jpg?20150606163343"
+                                <img src="{% static "img/692/027/270x270.crop.jpg" %}"
+                                     value="{% static "img/480/692/027/81af307f60cb7e9385732d7777088504.jpg" %}"
                                      width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto988559930"><a href="27692"></a></p>
                         </div>
@@ -999,9 +1078,8 @@
                             <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27694">기독교추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/694/027/a6d808b704a74945850cab6c93b6ec79.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/694/027/270x270.crop.jpg?20150606163343"
+                                <img src="{% static "img/694/027/270x270.crop.jpg" %}"
+                                     value="{% static "img/480/694/027/a6d808b704a74945850cab6c93b6ec79.jpg" %}"
                                      width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
                                 </a>
@@ -1010,42 +1088,6 @@
                         </div>
                     </div>
                     <div style="clear: both;"></div>
-                    <script type="text/javascript">
-                        jQuery(document).ready(function ($) {
-                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
-                            $(".fade").fadeTo(1, 1);
-                            $(".fade").hover(function () {
-                                $(this).fadeTo("fast", 0.33);
-                            }, function () {
-                                $(this).fadeTo("slow", 1);
-                            });
-                            $(".ptyPoto988559930").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
-                            $("a[rel^='prettyPhoto']").each(function () {
-                                var $image = jQuery(this).contents("img");
-                                $newclass = 'no_image';
-                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
-                                else $(this).removeClass("fade");
-                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
-                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
-                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
-                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
-                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
-                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
-                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
-                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
-                                $pos = $image.position();
-                                $(this).addClass($newclass).css({
-                                    height: $height,
-                                    width: $width,
-                                    top: $pos.top,
-                                    left: $pos.left
-                                });
-                            });
-                        });
-                    </script>
                 </div>
             </div>
             <div class="xe_content xe-widget-wrapper "
@@ -1060,24 +1102,16 @@
             </div>
             <div class="xe-widget-wrapper "
                  style="border: 0px solid rgb(255, 255, 255); margin: 10px 0px 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0px 0px; background-repeat: repeat;">
-                <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><!--[if IE 6]>
-<script src="/widgets/contentslider/skins/prettyPhoto/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>
-  DD_belatedPNG.fix('img');
-</script>
-<![endif]-->
-
+                <div style="*zoom:1;padding:0px 0px 0px 0px !important;">
                     <div id="ptyPoto1322998220">
                         <div class="ptyPoto1322998220">
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28857">벽제추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/857/028/365e76f6a69949e17e4a726057ba3127.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/857/028/270x200.crop.jpg?20180203091007"
+                                <img src="{% static "img/857/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/857/028/365e76f6a69949e17e4a726057ba3127.jpg" %}"
                                      width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28857"></a></p>
                         </div>
@@ -1085,12 +1119,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28855">벽제추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/855/028/d88f2adc25dc086e6b673d585bc436f1.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/855/028/270x200.crop.jpg?20180203091007"
+                                <img src="{% static "img/855/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/855/028/d88f2adc25dc086e6b673d585bc436f1.jpg" %}"
                                      width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28855"></a></p>
                         </div>
@@ -1098,12 +1130,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28853">벽제추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/853/028/ab070a27e6cb1436586ec100e659c486.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/853/028/270x200.crop.jpg?20180203091007"
+                                <img src="{% static "img/853/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/853/028/ab070a27e6cb1436586ec100e659c486.jpg" %}"
                                      width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28853"></a></p>
                         </div>
@@ -1111,12 +1141,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28851">벽제추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/851/028/46befbacd4a0f80acccbf4453f8c9d18.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/851/028/270x200.crop.jpg?20180203091007"
+                                <img src="{% static "img/851/028/270x200.crop.jpg" %}"
+                                    value="{% static "img/168/851/028/46befbacd4a0f80acccbf4453f8c9d18.jpg" %}"
                                      width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28851"></a></p>
                         </div>
@@ -1124,12 +1152,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="236">벽제 덕양구납골당</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/236/50891e927f69a6fb66fe2ae11fedcc90.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/236/270x200.crop.jpg?20180203091008"
+                                <img src="{% static "img/168/236/50891e927f69a6fb66fe2ae11fedcc90.jpg" %}"
+                                     value="{% static "img/168/236/50891e927f69a6fb66fe2ae11fedcc90.jpg" %}"
                                      width="270" height="200" title='벽제 덕양구납골당' alt='벽제 덕양구납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="236"></a></p>
                         </div>
@@ -1137,12 +1163,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="321">벽제납골당</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/321/fff89451f7ac95ceb64ada948dedbe20.JPG"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/321/270x200.crop.jpg?20150415144615"
+                                <img src="{% static "img/321/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/321/fff89451f7ac95ceb64ada948dedbe20.JPG" %}"
                                      width="270" height="200" title='벽제납골당' alt='벽제납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="321"></a></p>
                         </div>
@@ -1150,12 +1174,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="790">기독교납골당</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/790/e633e97b6206ed757f2bf5f798dd133d.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/790/270x200.crop.jpg?20150415144555"
+                                <img src="{% static "img/790/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/790/e633e97b6206ed757f2bf5f798dd133d.jpg" %}"
                                      width="270" height="200" title='기독교납골당' alt='기독교납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="790"></a></p>
                         </div>
@@ -1163,11 +1185,9 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="1183">추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/183/001/fc2a5fe129d2377aa9542f587de427a6.JPG"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/183/001/270x200.crop.jpg?20150415144536"
+                                <img src="{% static "img/183/001/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/183/001/fc2a5fe129d2377aa9542f587de427a6.JPG" %}"
                                      width="270" height="200" title='추모공원' alt='추모공원 by 할렐루야' class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="1183"></a></p>
                         </div>
@@ -1175,75 +1195,29 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="775">벽제추모공원</a></div>
                             <div class="headmeta">기독교납골당</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/775/ba293e5cf64c9d55905703b98a5c15ce.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/775/270x200.crop.jpg?20150415144505"
+                                <img src="{% static "img/775/270x200.crop.jpg" %}"
+                                     value="{% static "img/168/775/ba293e5cf64c9d55905703b98a5c15ce.jpg" %}"
                                      width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="775"></a></p>
                         </div>
                     </div>
                     <div style="clear: both;"></div>
-                    <script type="text/javascript">
-                        jQuery(document).ready(function ($) {
-                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
-                            $(".fade").fadeTo(1, 1);
-                            $(".fade").hover(function () {
-                                $(this).fadeTo("fast", 0.33);
-                            }, function () {
-                                $(this).fadeTo("slow", 1);
-                            });
-                            $(".ptyPoto1322998220").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
-                            $("a[rel^='prettyPhoto']").each(function () {
-                                var $image = jQuery(this).contents("img");
-                                $newclass = 'no_image';
-                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
-                                else $(this).removeClass("fade");
-                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
-                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
-                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
-                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
-                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
-                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
-                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
-                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
-                                $pos = $image.position();
-                                $(this).addClass($newclass).css({
-                                    height: $height,
-                                    width: $width,
-                                    top: $pos.top,
-                                    left: $pos.left
-                                });
-                            });
-                        });
-                    </script>
                 </div>
             </div>
             <div class="xe-widget-wrapper "
                  style="border: 0px solid rgb(255, 255, 255); margin: 10px 0px 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0px 0px; background-repeat: repeat;">
-                <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><!--[if IE 6]>
-<script src="/widgets/contentslider/skins/prettyPhoto/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>
-  DD_belatedPNG.fix('img');
-</script>
-<![endif]-->
-
+                <div style="*zoom:1;padding:0px 0px 0px 0px !important;">
                     <div id="ptyPoto1317613560">
                         <div class="ptyPoto1317613560">
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28048">추모공원 납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/048/028/ab82168e8e7569c021012b55fed8bba2.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/048/028/270x200.crop.jpg?20150607113835"
+                                <img src="{% static "img/048/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/799/048/028/ab82168e8e7569c021012b55fed8bba2.jpg" %}"
                                      width="270" height="200" title='추모공원 납골당' alt='추모공원 납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28048"></a></p>
                         </div>
@@ -1251,12 +1225,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28046">추모공원납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/046/028/3b4111a245c89feabf5041fa55c20901.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/046/028/270x200.crop.jpg?20150607113643"
+                                <img src="{% static "img/046/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/046/028/870x250.crop.jpg" %}"
                                      width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28046"></a></p>
                         </div>
@@ -1264,12 +1236,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28044">추모공원납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/044/028/075a7e9c1c018f6c37141690753a8fee.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/044/028/270x200.crop.jpg?20150607113643"
+                                <img src="{% static "img/044/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/799/044/028/075a7e9c1c018f6c37141690753a8fee.jpg" %}"
                                      width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28044"></a></p>
                         </div>
@@ -1277,12 +1247,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28042">추모공원납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/042/028/b6454468eaaafa8238c0e8c33b7d18d0.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/042/028/270x200.crop.jpg?20150607113643"
+                                <img src="{% static "img/042/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/799/042/028/b6454468eaaafa8238c0e8c33b7d18d0.jpg" %}"
                                      width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28042"></a></p>
                         </div>
@@ -1290,12 +1258,10 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28040">추모공원납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/040/028/da240f6eddd3a7299b326b175575da31.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/040/028/270x200.crop.jpg?20150607113643"
+                                <img src="{% static "img/040/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/799/040/028/da240f6eddd3a7299b326b175575da31.jpg" %}"
                                      width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28040"></a></p>
                         </div>
@@ -1303,53 +1269,15 @@
                             <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28038">추모공원납골당</a></div>
                             <div class="headmeta">기독교공원묘지</div>
                             <div class="previewimage">
-                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/038/028/6fa00f1f6456dda2b67cd076f13e7e01.jpg"
-                                   rel="prettyPhoto[gallery2]"/>
-                                <img src="http://www.hallelujah.co.kr/files/thumbnails/038/028/270x200.crop.jpg?20150607113643"
+                                <img src="{% static "img/038/028/270x200.crop.jpg" %}"
+                                     value="{% static "img/799/038/028/6fa00f1f6456dda2b67cd076f13e7e01.jpg" %}"
                                      width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
                                      class="rounded-all fade"/>
-                                </a>
                             </div>
                             <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28038"></a></p>
                         </div>
                     </div>
                     <div style="clear: both;"></div>
-                    <script type="text/javascript">
-                        jQuery(document).ready(function ($) {
-                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
-                            $(".fade").fadeTo(1, 1);
-                            $(".fade").hover(function () {
-                                $(this).fadeTo("fast", 0.33);
-                            }, function () {
-                                $(this).fadeTo("slow", 1);
-                            });
-                            $(".ptyPoto1317613560").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
-                            $("a[rel^='prettyPhoto']").each(function () {
-                                var $image = jQuery(this).contents("img");
-                                $newclass = 'no_image';
-                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
-                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
-                                else $(this).removeClass("fade");
-                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
-                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
-                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
-                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
-                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
-                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
-                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
-                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
-                                $pos = $image.position();
-                                $(this).addClass($newclass).css({
-                                    height: $height,
-                                    width: $width,
-                                    top: $pos.top,
-                                    left: $pos.left
-                                });
-                            });
-                        });
-                    </script>
                 </div>
             </div>
         </div><!--서브타입시작-->
@@ -1357,11 +1285,11 @@
     </div>
     <!--바디끝-->
 </div>
-<div class="sn_bottom">
-    <div class="s_bottom">
+<div class="sn_bottom" style="background:url({% static "img/sn_bottom_bg.jpg" %})">
+    <div class="sn_bottom" style="background:url({% static "img/s_bottom_bg.jpg" %})">
         <div class="footer_logo">
             <a href="./"><img
-                    src="http://www.hallelujah.co.kr/files/attach/images/27546/5287e19603b8b671e4fb8030eec0cb11.png"
+                    src="{% static "img/logo_2.png" %}" style="widht:160px; height:78px"
                     alt="할렐루야추모공원" border="0" class="iePngFix"/></a>
         </div>
         <div class="footer">
@@ -1380,8 +1308,8 @@
         <button type="button" class="close" onclick="document.getElementById('loginWindow').style.display='none'"
                 accesskey="X"><span>Close Login Layer</span></button>
         <form action="" method="post" class="typeA" id="commonLogin" onsubmit="return procFilter(this, login)"><input
-                type="hidden" name="error_return_url" value="/Goyang"/><input type="hidden" name="act" value=""/><input
-                type="hidden" name="mid" value="Goyang"/><input type="hidden" name="vid" value=""/>
+                type="hidden" name="error_return_url" value="/byeokje"/><input type="hidden" name="act" value=""/><input
+                type="hidden" name="mid" value="byeokje"/><input type="hidden" name="vid" value=""/>
             <fieldset>
                 <legend>XE Login</legend>
                 <dl>
@@ -1396,39 +1324,48 @@
                 <span class="loginButton"><input name="" type="submit" value="로그인"/></span>
             </fieldset>
         </form>
-        <ul class="help">
-            <li class="join"><a
-                    href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberSignUpForm">회원가입</a></li>
-            <li class="find"><a href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberFindAccount">ID/PW
-                찾기</a></li>
-            <li class="find"><a href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberResendAuthMail">인증메일
-                재발송</a></li>
-        </ul>
-        <button type="button" class="close" onclick="document.getElementById('loginWindow').style.display='none'"
-                accesskey="X"><span>Close Login Layer</span></button>
     </div>
 </div>
 <!-- /loginWindow -->
 <!-- POPUP -->
 
+<!-- The Modal -->
+<div id="img_modal" class="modal" style="">
+    <span class="close" id="close_span">&times;</span>
+    <img class="modal-content" style="width: 700px; height: 465px;" id="img01" src="{% static "img/040/028/270x200.crop.jpg" %}">
+    <div id="caption"></div>
+</div>
 
 <div id="outdated"></div>
 <script>
-    jQuery(document).ready(function () {
-        outdatedBrowser({
-            lowerThan: 'IE8', bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
-            languagePath: 'addons/outdated_browser/lang/ko.html'
-        })
-    })
+    $(document).ready(function () {});
 </script>
-<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-<script type="text/javascript"> if (!wcs_add) var wcs_add = {};
-wcs_add["wa"] = "12040dbee9a17f4";
-wcs_do(); </script><!-- ETC -->
-<div class="wfsr"></div>
-<script src="/files/cache/js_filter_compiled/ec489c01514ae15608bd00f218ee0164.ko.compiled.js?20200217143243"></script>
-<script src="/addons/outdated_browser/js/outdatedbrowser.min.js?20151127152733"></script>
+
+<script>
+    (function($) {
+        $(".fade").fadeTo(1, 1);
+        $(".fade").hover(function () {
+            $(this).fadeTo("fast", 0.33);
+        }, function () {
+            $(this).fadeTo("slow", 1);
+        });
+
+        var img_modal = $("#img_modal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        $(".fade").click(function () {
+            img_modal.modal("show");
+            img_modal.css("display", "block");
+            img_modal.css("z-index", 21);
+            modalImg.src = $(this).attr('value');
+            captionText.innerHTML = $(this)[0].alt;
+        });
+        $("#close_span").click(function () {
+            img_modal.css("display", "none");
+        });
+    })(jQuery);
+</script>
+<div class="wfsr" style="background: #333 url({% static "img/sn_bottom_bg.jpg" %}) no-repeat center 15px;"></div>
+<link href="{% static "js/outdatedbrowser.min.js" %}" rel="stylesheet">
 </body>
 </html>
