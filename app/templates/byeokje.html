@@ -6,663 +6,1429 @@
     <meta name="Generator" content="XpressEngine">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- TITLE -->
-    <title>벽제납골당 - 나우앤드</title>
-    <!-- CSS -->
+    <title>벽제 기독교관 - 할렐루야추모공원</title>
     <link href="{% static "css/xe.min.css" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/css/layout.css" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/css/idangerous.swiper.css" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/css/welcome.css" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/css/webfont.css" %}" rel="stylesheet">
-    <link href="{% static "xeicon/xeicon.min.css" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/css/widget.login.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/default.css" %}" rel="stylesheet">
+    <link href="{% static "css/dark.css" %}" rel="stylesheet">
+    <link href="{% static "css/xeicon.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet">
+    <link href="{% static "css/prettyPhoto-link.css" %}" rel="stylesheet">
+    <link href="{% static "css/outdatedbrowser.min.css" %}" rel="stylesheet">
     <link href="{% static "css/layout.css" %}" rel="stylesheet">
+
     <!-- JS -->
-    <link href="{% static "layouts/xe_funeral/js/idangerous.swiper.min.js" %}">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <link href="{% static "layouts/xe_funeral/js/layout.js" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/js/xe_official.js" %}" rel="stylesheet">
-    <link href="{% static "layouts/xe_funeral/js/jquery.parallax-scroll.min.js" %}" rel="stylesheet">
-    <link href="{% static "font/fontawesome5/free/js/all.min.js" %}" rel="stylesheet">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Site RSS" href="http://nowand.org/rss"/>
-    <link rel="alternate" type="application/atom+xml" title="Site Atom" href="http://nowand.org/atom"/>
-
-
-    <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
-    <script type="text/javascript">
-        if (!wcs_add) var wcs_add = {};
-        wcs_add["wa"] = "72348d9b3b8cb8";
-        wcs_do();
-    </script>
-
-
-    <meta name="viewport" content="width=1300">
+    <script src="{% static "lib/jquery-ui-1.12.1/jquery-ui.min.js" %}"></script>
+    <script href="{% static "js/jquery.min.js" %}" rel="stylesheet"></script>
+    <script href="{% static "js/jquery-1.x.min.js" %}" rel="stylesheet"></script>
+    <link href="{% static "js/x.min.js" %}" rel="stylesheet">
+    <link href="{% static "js/page_admin.js" %}" rel="stylesheet">
+    <link href="{% static "js/script.js" %}" rel="stylesheet">
+    <link href="{% static "js/jQuery.navi.js" %}" rel="stylesheet">
+    <link href="{% static "js/xe_official.js" %}" rel="stylesheet">
+    <link href="{% static "js/jquery.galleriffic.js" %}" rel="stylesheet">
+    <link href="{% static "js/jquery.opacityrollover.js" %}" rel="stylesheet">
+    <link href="{% static "js/jquery.prettyPhoto.min.js" %}" rel="stylesheet">
+    <link href="{% static "js/jquery.prettyPhoto.js" %}" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="http://www.hallelujah.co.kr/files/attach/xeicon/favicon.ico"/>
+    <meta name="naver-site-verification" content="a8f6ea8af37d33f567386875925ae79b3aaaacff"/>
     <style> .xe_content {
-        font-size: 13px;
+        font-size: 12px;
     }</style>
-    <link rel="canonical" href="http://nowand.org/byeokje"/>
-    <meta name="keywords" content="벽제,벽제납골당,벽제추모공원,벽제수목장,의정부,양주,인천,강화,김포수목장"/>
-    <meta name="description" content="벽제,벽제납골당,벽제추모공원,벽제수목장,의정부,양주,인천,강화,김포수목장"/>
+    <link rel="canonical" href="http://www.hallelujah.co.kr/Goyang"/>
+    <meta name="keywords" content="납골당,추모공원,수목장,자연장,공원묘지,매장묘,묘지,가격비교"/>
+    <meta name="description" content="경기도,고양시,벽제,파주,일산,의정부,양주,송추,장흥,광탄,동두천,연천,크리스찬,추모공원"/>
     <meta property="og:locale" content="ko_KR"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://nowand.org/byeokje"/>
-    <meta property="og:site_name" content="나우앤드"/>
-    <meta property="og:title" content="벽제납골당 - 나우앤드"/>
-    <meta property="og:description" content="벽제납골당,의정부,양주,인천,강화,김포수목장,자연장"/>
+    <meta property="og:url" content="http://www.hallelujah.co.kr/Goyang"/>
+    <meta property="og:site_name" content="할렐루야추모공원"/>
+    <meta property="og:title" content="벽제 기독교관 - 할렐루야추모공원"/>
+    <meta property="og:description" content="경기도,고양시,벽제,파주,일산,의정부,양주,송추,장흥,광탄,동두천,연천,크리스찬,추모공원"/>
     <style type="text/css">
-        .textT1_news, .textT1_news a, .textT1_news a:visited {
-            color: #fff;
-            font-family: 돋움, 'Trebuchet MS', Trebuchet, Arial, Verdana, sans-serif;
+        #gnb {
+            left: 185px;
+        }</style>
+    <style type="text/css">
+        .textT1_Galleriffic_818004649, .textT1_Galleriffic_818004649 a, .textT1_Galleriffic_818004649 a:visited {
+            color: #000;
+            font-family: 돋움, 'Trebuchet MS', Verdana, sans-serif;
             font-size: 14px;
             text-decoration: none;
-            height: 14px;
-            line-height: 14px;
+            display: none;
+        }
+
+        .textT1_Galleriffic_818004649 a:hover, .textT1_Galleriffic_818004649 a:focus {
+            text-decoration: underline;
+        }
+
+        .textC1_Galleriffic_818004649, .textC1_Galleriffic_818004649 a, .textC1_Galleriffic_818004649 a:visited {
+            text-align: justify;
+            color: #000;
+            font-family: 돋움, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            text-decoration: none;
+            display: none;
+        }
+
+        .textC1_Galleriffic_818004649 a:hover, .textC1_Galleriffic_818004649 a:focus {
+            text-decoration: underline;
+        }
+
+        /* Default 스킨 전체 레이어 */
+        #Galleriffic_818004649_page {
+            width: 792px;
+            margin: 0 auto;
+            text-align: left;
+            padding-top: 30px;
+        }
+
+        div.content_Galleriffic_818004649 {
+            display: block;
+            clear: both;
+        }
+
+        div.content_Galleriffic_818004649 a, div.navigation_Galleriffic_818004649 a {
+            text-decoration: none;
+        }
+
+        div.content_Galleriffic_818004649 a:hover, div.content_Galleriffic_818004649 a:active {
+            text-decoration: underline;
+        }
+
+        div.navigation_Galleriffic_818004649 a.pageLink_Galleriffic_818004649 {
+            height: 77px;
+            line-height: 77px;
+        }
+
+        div.controls_Galleriffic_818004649 {
+            margin-top: 5px;
+            height: 23px;
+        }
+
+        div.controls_Galleriffic_818004649 a {
+            padding: 5px;
+        }
+
+        div.ss-controls {
+            float: left;
+        }
+
+        div.nav-controls {
+            float: right;
+        }
+
+        div.slideshow-container_Galleriffic_818004649,
+        div.loader_Galleriffic_818004649,
+        div.slideshow_Galleriffic_818004649 a.advance-link {
+            width: 790px; /* 슬라이드 이미지 넓이 */
+        }
+
+        div.loader_Galleriffic_818004649,
+        div.slideshow_Galleriffic_818004649 a.advance-link,
+        div.caption-container_Galleriffic_818004649 {
+            height: 350px; /* 슬라이드 이미지 높이 */
+        }
+
+        div.slideshow-container_Galleriffic_818004649 {
+            position: relative;
+            clear: both;
+            float: left;
+            height: 350px; /* 슬라이드 이미지 높이(테두리) + 컨트롤 버튼 */
+        }
+
+        div.loader_Galleriffic_818004649 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('http://www.hallelujah.co.kr/widgets/contentslider/skins/Galleriffic/js/loader.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div.slideshow_Galleriffic_818004649 span.image-wrapper_Galleriffic_818004649 {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+
+        div.slideshow_Galleriffic_818004649 a.advance-link {
+            display: block;
+            line-height: 350px; /* 중요 변경하지 마세요 */
+            text-align: center;
+        }
+
+        div.slideshow_Galleriffic_818004649 a.advance-link:hover,
+        div.slideshow_Galleriffic_818004649 a.advance-link:active,
+        div.slideshow_Galleriffic_818004649 a.advance-link:visited {
+            text-decoration: none;
+        }
+
+        div.slideshow_Galleriffic_818004649 a.advance-link:focus {
+            outline: none;
+        }
+
+        div.slideshow_Galleriffic_818004649 img {
+            border-style: solid;
+            border-width: 0px; /* 슬라이드 테두리 두께 */
+        }
+
+        div.caption-container_Galleriffic_818004649 {
+            float: right;
+            position: relative;
+            margin-top: 0px;
+        }
+
+        span.image-caption_Galleriffic_818004649 {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        div.caption-container_Galleriffic_818004649, span.image-caption_Galleriffic_818004649 {
+            width: 2px;
+        }
+
+        div.captionContent_Galleriffic_818004649 {
+            padding: 0 12px;
+        }
+
+        div.image-title_Galleriffic_818004649 {
+            font-weight: bold;
+        }
+
+        div.image-desc_Galleriffic_818004649 {
+            line-height: 1.3em;
+            padding-top: 12px;
+        }
+
+        div.photo-index_Galleriffic_818004649 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 12px;
+        }
+
+        div.navigation-container_Galleriffic_818004649 {
+            float: left;
+            position: absolute;
+            left: 26%;
+        }
+
+        div.navigation_Galleriffic_818004649 {
+            float: left;
+            position: relative;
+            right: -40%;
+            height: 60px; /* (추가) 페이지버튼(네비게이션) 높이 */
+            margin-top: 355px; /* 슬라이드 박스 간격 */
+        }
+
+        div.navigation_Galleriffic_818004649 a.pageLink_Galleriffic_818004649 {
+            display: block;
+            position: relative;
+            float: left;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        div.navigation_Galleriffic_818004649 a.pageLink_Galleriffic_818004649:focus {
+            outline: none;
+        }
+
+        ul.thumbsImages_Galleriffic_818004649 {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            z-index: 20;
+        }
+
+        ul.thumbsImages_Galleriffic_818004649 li {
+            float: left;
+            padding: 0;
+            margin: 1px;
+            list-style: none;
+        }
+
+        a.thumbImg_Galleriffic_818004649 {
+            padding: 4px;
+            display: block;
+        }
+
+        a.thumbImg_Galleriffic_818004649:focus {
+            outline: none;
+        }
+
+        ul.thumbsImages_Galleriffic_818004649 img {
+            border: none;
+            display: block;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 {
+            clear: both;
+            position: absolute; /* (수정) 좌우 이동버튼 */
+            left: -50%;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 a, div.paginationBtn_Galleriffic_818004649 span.current, div.paginationBtn_Galleriffic_818004649 span.ellipsis {
+            position: relative;
+            display: none; /* 페이지버튼 감추기 */
+            float: left;
+            margin-right: 2px;
+            padding: 4px 7px 2px 7px;
+            border: 1px solid #ccc;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 a:hover {
+            text-decoration: none;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 span.current {
+            font-weight: bold;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 span.ellipsis {
+            border: none;
+            padding: 5px 0 3px 2px;
+        }
+
+        div.gallery-gutter_Galleriffic_818004649 {
+            clear: both;
+            padding-bottom: 20px;
+        }
+
+        div.caption-container_Galleriffic_818004649 {
+            color: #111;
+        }
+
+        div.photo-index_Galleriffic_818004649 {
+            color: #777;
+        }
+
+        div.navigation_Galleriffic_818004649 a.prev {
+            background-image: url({% static "img/prevPageArrow.gif" %});
+        }
+
+        div.navigation_Galleriffic_818004649 a.next {
+            background-image: url({% static "img/nextPageArrow.gif" %});
+        }
+
+        div.loader_Galleriffic_818004649 {
+            background-image: url({% static "img/loader.gif" %});
+        }
+
+        div.slideshow_Galleriffic_818004649 img {
+            border-color: #ccc; /* 슬라이드 이미지 테두리 색 */
+        }
+
+        ul.thumbsImages_Galleriffic_818004649 li.selected a.thumbImg_Galleriffic_818004649 {
+            background: #FD6625; /* 썸네일 테투리 색 */
+        }
+
+        div.paginationBtn_Galleriffic_818004649 a:hover {
+            background-color: #eee;
+        }
+
+        div.paginationBtn_Galleriffic_818004649 span.current {
+            background-color: #000;
+            border-color: #000;
+            color: #fff;
+        }
+
+        div.t {
+            position: absolute;
+            width: 560px;
+            height: 430px;
+            margin-top: -48px;
+            clear: both;
+            display: block;
+            z-index: 10;
+        }
+    </style>
+    <style>.noscript {
+        display: none;
+    }</style>
+    <style type="text/css">
+        .textT1_ptyPoto988559930, .textT1_ptyPoto988559930 a, .textT1_ptyPoto988559930 a:visited {
+            color: #0697D6;
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', Garuda, sans-serif;
+            font-size: 17px;
+            font-style: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            height: 23px;
+            line-height: 17px;
             text-align: left;
             overflow: hidden;
             display: none;
         }
 
-        .textT1_news a:hover, .textT1_news a:focus {
+        .textT1_ptyPoto988559930 a:hover, .textT1_ptyPoto988559930 a:focus {
             text-decoration: underline;
         }
 
-        .textC1_news, .textC1_news a, .textC1_news a:visited {
+        .textC1_ptyPoto988559930, .textC1_ptyPoto988559930 a, .textC1_ptyPoto988559930 a:visited {
             text-align: justify;
-            color: #fff;
-            font-family: 돋움, Arial, Helvetica, sans-serif;
+            color: #666;
+            font-family: 굴림, Arial, Helevtica, Verdana, san-serif;
             font-size: 13px;
             text-decoration: none;
             font-weight: normal;
-            line-height: 13px;
-            height: 40px;
+            height: 50px;
             display: none;
         }
 
-        .textC1_news a:hover, .textC1_news a:focus {
+        .textC1_ptyPoto988559930 a:hover, .textC1_ptyPoto988559930 a:focus {
             text-decoration: underline;
         }
 
-        /* CSS Document */
-        .lof-slidecontent_news {
-            position: relative;
-            overflow: hidden;
-            width: 1200px; /* 전체 넓이 */
-            height: 480px; /* 전체 높이 : 300 */
-        }
-
-        .lof-slidecontent_news .preload {
-            height: 100%;
-            width: 100%;
-            background: #FFF;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 100000;
-            color: #FFF;
-            text-align: center
-        }
-
-        .lof-slidecontent_news .preload div {
-            height: 100%;
-            width: 100%;
-            background: transparent url({% static "img/load-indicator.gif" %}) no-repeat scroll 50% 50%;
-        }
-
-        /* main flash */
-        .lof-slidecontent_news .lof-main-wapper {
-            margin-right: auto;
-            overflow: hidden;
-            background: transparent url({% static "img/load-indicator.gif" %}) no-repeat scroll 50% 50%;
-            padding: 0px;
-            height: 100%;
-            width: 980px; /* 슬라이드 이미지 넓이 */
-            position: relative;
-            overflow: hidden;
-        }
-
-        .lof-slidecontent_news .lof-main-wapper .lof-main-item_news {
-            overflow: hidden;
-            padding: 0px;
-            margin: 0px;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-
-        .lof-slidecontent_news .lof-main-wapper .lof-main-item_news img {
-            padding: 0px;
-            width: 980px; /* 슬라이드 이미지 넓이 */
-        }
-
-        .lof-slidecontent_news .lof-main-item-desc {
-            z-index: 100;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            width: 980px; /* 캡션박스 넓이 */
-            background: url({% static "img/transparent_bg.png" %});
-            /* filter:0.7(opacity:60) */
-        }
-
-        .lof-slidecontent_news .lof-main-item-desc p {
-            margin: 0 5px;
-            padding: 0px;
-        }
-
-        .lof-slidecontent_news .lof-main-item-desc h3 a {
-            margin: 0 5px;
-            padding: 0px 0px;
-        }
-
-        /* item navigator */
-        .lof-slidecontent_news ul.lof-navigator {
-            top: 0px;
+        #ptyPoto988559930 {
+            width: 870px; /* 전체 넓이 */
+            font-family: Arial, Tahoma, Verdana;
+            margin: 0 auto;
             padding: 0;
-            margin: 0;
-            position: absolute;
-            width: 100%;
+            line-height: 16px;
+            float: left;
+            clear: both;
         }
 
-        .lof-slidecontent_news ul.lof-navigator li {
-            cursor: hand;
-            cursor: pointer;
-            list-style: none;
-            width: 100%;
+        .ptyPoto988559930 {
+            width: 270px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+
+        #ptyPoto988559930 .ptyPoto-heading {
+            margin: 0;
             padding: 0;
-            margin: 0;
+            letter-spacing: 0.4px;
+            line-height: 1.4em;
+            padding-bottom: 0px;
+            border: 0;
+            clear: both;
+            white-space: nowrap;
+        }
+
+        * html #ptyPoto988559930 .ptyPoto-heading {
+            white-space: normal;
+            vertical-align: middle;
+        }
+
+        .ptyPoto988559930 .headmeta {
+            float: left;
+            padding-bottom: 4px;
+            color: #666;
+            font-size: 11px;
+            clear: both;
+            display: none;
+        }
+
+        .ptyPoto988559930 .previewimage {
+            width: 270px;
+            height: 270px;
+            float: left;
+        }
+
+        .ptyPoto988559930 .ptyPoto-text {
+            margin-bottom: 0px;
+            clear: both;
             overflow: hidden;
         }
 
-        .lof-slidecontent_news .lof-navigator-outer {
-            position: absolute;
-            right: 0;
-            top: 0px;
-            z-index: 100;
-            height: 480px; /* 왼쪽 썸네일 박스 높이 */
-            width: 235px; /* 왼쪽 썸네일 박스 넓이 */
-            overflow: hidden;
-            color: #FFF
-        }
-
-        .lof-slidecontent_news .lof-navigator li.active {
-            background: url({% static "img/arrow-bg.png" %}) no-repeat scroll left center;
-            color: #FFF
-        }
-
-        .lof-slidecontent_news .lof-navigator li:hover {
-
-        }
-
-        .lof-slidecontent_news .lof-navigator li h3 {
-            color: #FFF;
-            padding: 10px 0 0 !important; /* 여백 */
-            margin: 0;
-            font-size: 11px; /* 썸네일 박스 제목 크기 */
-        }
-
-        .lof-slidecontent_news .lof-navigator li div {
-            background: url({% static "img/transparent_bg.png" %});
-            color: #FFF;
-            height: 100%;
-            position: relative;
-            margin-left: 15px;
-            padding-left: 0px; /* 여백 */
-            border-top: 1px solid #E1E1E1;
-        }
-
-        .lof-slidecontent_news .lof-navigator li:first-child div {
-            border-top: 0px solid #E1E1E1;
-        }
-
-        .lof-slidecontent_news .lof-navigator li.active div {
-            background: url({% static "img/grad-bg.png" %});
-            color: #FFF;
-        }
-
-        .lof-slidecontent_news .lof-navigator li div a {
-            color: #FFF;
-            text-decoration: none;
-        }
-
-        .lof-slidecontent_news .lof-navigator li div a:hover {
-            color: #FFF;
-            text-decoration: underline;
-        }
-
-        .lof-slidecontent_news .lof-navigator li img {
-            height: 70px; /* 썸네일 높이 */
-            width: 190px; /* 썸네일 넓이 */
-            margin: 10px; /* 여백 */
-            float: left;
-            padding: 3px;
-            border: #fff solid 1px;
-        }
-
-        .lof-slidecontent_news .lof-navigator li.active img {
-            border: #fffC solid 1px;
-        }
-
-        .lof-slidecontent_news .lof-navigator li h3 a {
-            color: #FFF;
-            font-size: 11px; /* 썸네일 박스 제목 크기 */
-            text-decoration: none;
-        }
-
-        .lof-slidecontent_news .lof-navigator li h3 a:hover {
-            color: #FFF;
-            text-decoration: underline;
-        }
-
-        .lof-slidecontent_news .lof-navigator li.active h3 {
-            color: #FFF;
-        }
-
-        .lof-slidecontent_news .lof-next {
-            position: absolute;
-            top: 0;
-            height: 30px;
-            background: #F9F9F9;
+        /* Image rounded corners */
+        .ptyPoto988559930 .rounded-all {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
             display: block;
-            width: 100%;
         }
 
-        .lof-slidecontent_news .lof-previous {
-            position: absolute;
-            bottom: 0;
-            height: 30px;
-            background: #F9F9F9;
+        .ptyPoto988559930 .lightbox_image {
+            width: 270px;
+            height: 270px;
+            float: left;
             display: block;
-            width: 100%;
+            background: url('{% static "img/magnify.png" %}') no-repeat center center;
         }
 
-        #news .lightbox_image {
-            width: 190px;
-            height: 70px;
+        .ptyPoto988559930 .lightbox_video {
+            width: 270px;
+            height: 270px;
             float: left;
-            background: url({% static "img/magnify.png" %}) no-repeat center center;
+            display: block;
+            background: url('{% static "img/video.png" %}') no-repeat center center;
         }
 
-        #news .lightbox_video {
-            width: 190px;
-            height: 70px;
+        .ptyPoto988559930 .no_image {
+            width: 270px;
+            height: 270px;
             float: left;
-            background: url({% static "img/video.png" %}) no-repeat center center;
+            display: block;
+            background: url('{% static "img/no_image.png" %}') no-repeat center center;
         }
 
-        #news .no_image {
-            width: 190px;
-            height: 70px;
+        .ptyPoto988559930 .open_doc {
+            width: 270px;
+            height: 270px;
             float: left;
-            background: url({% static "img/no_image.png" %}) no-repeat center center;
-        }
-
-        #news .open_doc {
-            width: 190px;
-            height: 70px;
-            float: left;
-            background: url({% static "img/document.png" %}) no-repeat center center;
+            display: block;
+            background: url('{% static "img/document.png" %}') no-repeat center center;
         }
     </style>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style type="text/css">
+        .textT1_ptyPoto1322998220, .textT1_ptyPoto1322998220 a, .textT1_ptyPoto1322998220 a:visited {
+            color: #0697D6;
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', Garuda, sans-serif;
+            font-size: 17px;
+            font-style: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            height: 23px;
+            line-height: 17px;
+            text-align: left;
+            overflow: hidden;
+            display: none;
+        }
+
+        .textT1_ptyPoto1322998220 a:hover, .textT1_ptyPoto1322998220 a:focus {
+            text-decoration: underline;
+        }
+
+        .textC1_ptyPoto1322998220, .textC1_ptyPoto1322998220 a, .textC1_ptyPoto1322998220 a:visited {
+            text-align: justify;
+            color: #666;
+            font-family: 굴림, Arial, Helevtica, Verdana, san-serif;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: normal;
+            height: 50px;
+            display: none;
+        }
+
+        .textC1_ptyPoto1322998220 a:hover, .textC1_ptyPoto1322998220 a:focus {
+            text-decoration: underline;
+        }
+
+        #ptyPoto1322998220 {
+            width: 870px; /* 전체 넓이 */
+            font-family: Arial, Tahoma, Verdana;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 16px;
+            float: left;
+            clear: both;
+        }
+
+        .ptyPoto1322998220 {
+            width: 270px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+
+        #ptyPoto1322998220 .ptyPoto-heading {
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.4px;
+            line-height: 1.4em;
+            padding-bottom: 0px;
+            border: 0;
+            clear: both;
+            white-space: nowrap;
+        }
+
+        * html #ptyPoto1322998220 .ptyPoto-heading {
+            white-space: normal;
+            vertical-align: middle;
+        }
+
+        .ptyPoto1322998220 .headmeta {
+            float: left;
+            padding-bottom: 4px;
+            color: #666;
+            font-size: 11px;
+            clear: both;
+            display: none;
+        }
+
+        .ptyPoto1322998220 .previewimage {
+            width: 270px;
+            height: 200px;
+            float: left;
+        }
+
+        .ptyPoto1322998220 .ptyPoto-text {
+            margin-bottom: 0px;
+            clear: both;
+            overflow: hidden;
+        }
+
+        /* Image rounded corners */
+        .ptyPoto1322998220 .rounded-all {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .ptyPoto1322998220 .lightbox_image {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/magnify.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1322998220 .lightbox_video {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/video.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1322998220 .no_image {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/no_image.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1322998220 .open_doc {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/document.png" %}') no-repeat center center;
+        }
+    </style>
+    <style type="text/css">
+        .textT1_ptyPoto1317613560, .textT1_ptyPoto1317613560 a, .textT1_ptyPoto1317613560 a:visited {
+            color: #0697D6;
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', Garuda, sans-serif;
+            font-size: 17px;
+            font-style: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            height: 23px;
+            line-height: 17px;
+            text-align: left;
+            overflow: hidden;
+            display: none;
+        }
+
+        .textT1_ptyPoto1317613560 a:hover, .textT1_ptyPoto1317613560 a:focus {
+            text-decoration: underline;
+        }
+
+        .textC1_ptyPoto1317613560, .textC1_ptyPoto1317613560 a, .textC1_ptyPoto1317613560 a:visited {
+            text-align: justify;
+            color: #666;
+            font-family: 굴림, Arial, Helevtica, Verdana, san-serif;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: normal;
+            height: 50px;
+            display: none;
+        }
+
+        .textC1_ptyPoto1317613560 a:hover, .textC1_ptyPoto1317613560 a:focus {
+            text-decoration: underline;
+        }
+
+        #ptyPoto1317613560 {
+            width: 870px; /* 전체 넓이 */
+            font-family: Arial, Tahoma, Verdana;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 16px;
+            float: left;
+            clear: both;
+        }
+
+        .ptyPoto1317613560 {
+            width: 270px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+
+        #ptyPoto1317613560 .ptyPoto-heading {
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.4px;
+            line-height: 1.4em;
+            padding-bottom: 0px;
+            border: 0;
+            clear: both;
+            white-space: nowrap;
+        }
+
+        * html #ptyPoto1317613560 .ptyPoto-heading {
+            white-space: normal;
+            vertical-align: middle;
+        }
+
+        .ptyPoto1317613560 .headmeta {
+            float: left;
+            padding-bottom: 4px;
+            color: #666;
+            font-size: 11px;
+            clear: both;
+            display: none;
+        }
+
+        .ptyPoto1317613560 .previewimage {
+            width: 270px;
+            height: 200px;
+            float: left;
+        }
+
+        .ptyPoto1317613560 .ptyPoto-text {
+            margin-bottom: 0px;
+            clear: both;
+            overflow: hidden;
+        }
+
+        /* Image rounded corners */
+        .ptyPoto1317613560 .rounded-all {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .ptyPoto1317613560 .lightbox_image {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/magnify.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1317613560 .lightbox_video {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/video.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1317613560 .no_image {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/no_image.png" %}') no-repeat center center;
+        }
+
+        .ptyPoto1317613560 .open_doc {
+            width: 270px;
+            height: 200px;
+            float: left;
+            display: block;
+            background: url('{% static "img/document.png" %}') no-repeat center center;
+        }
+    </style>
+    <style type="text/css">
+        #sn_popup {
+            top: px;
+            left: px;
+            width: px;
+        }
+
+        #sn_popup.loginLayer {
+            width: +20px;
+        }
+    </style>
 </head>
 <body>
 
-<p class="skip"><a href="#content">메뉴 건너뛰기</a></p>
-<div class="container   ">
-    <!-- HEADER -->
-    <div id="header" class="header_wrap xe-clearfix">
-        <div class="wrap_menu clear">
-            <header class="header">
-                <div class="logo-item">
-                    <a href="/">
-                        <img src="{% static "layouts/xe_funeral/img/logo.png" %}" alt="나우앤드"/>
-                    </a>
-                </div>
+<script src="{% static "js/DD_belatedPNG.js" %}"></script>
+<script>
+    DD_belatedPNG.fix('.iePngFix,.account');
+</script>
 
-                <!-- GNB -->
-                <div class="gnb">
-                    <ul class="main_menu clear">
-                        <li class="depth">
-                            <a href="http://www.nowand.org/gimpo">김포 청솔수목장</a>
-                            <div>
-                                <ul class="depth2">
-                                    <li>
-                                        <a href="http://www.nowand.org/gimpo">김포수목장</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/gimpo_info">김포수목장 특장점</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/board_photo">김포수목장 시설전경</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="on" class="depth">
-                            <a href="http://www.nowand.org/byeokje" value="벽제 납골당">벽제중앙추모공원</a>
-                            <div>
-                                <ul class="depth2">
-                                    <li>
-                                        <a href="http://www.nowand.org/byeokje">벽제납골당</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/byeokje_info">벽제납골당 특장점</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/byeokje_photo">벽제납골당 시설전경</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="depth">
-                            <a href="http://www.nowand.org/">나우앤드</a>
-                            <div>
-                            </div>
-                        </li>
-                        <li class="depth">
-                            <a href="http://www.nowand.org/yangju">양주 하늘안추모공원</a>
-                            <div>
-                                <ul class="depth2">
-                                    <li>
-                                        <a href="http://www.nowand.org/yangju">양주납골당</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/yangju_info">양주납골당 특장점</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/yangju_photo">양주납골당 시설전경</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="depth">
-                            <a href="http://www.nowand.org/namyangju">남양주 에덴추모공원</a>
-                            <div>
-                                <ul class="depth2">
-                                    <li>
-                                        <a href="http://www.nowand.org/namyangju">남양주납골당</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/namyangju_info">남양주납골당 특장점</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.nowand.org/namyangju_photo">남양주납골당 시설전경</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-        </div>
+<!--메인메뉴끝-->
+<div class="sn_header">
+    <div class="s_header">
+        <h1>
+            <a href="./">
+                <img src="{% static "img/logo_2.png" %}" alt="납골당" border="0" style="width:160px; height: 78px;"
+                     class="iePngFix"/>
+            </a>
+        </h1>
     </div>
-    <div class="visual sub sub_type2">
-        <span class="bg_img" style="background-image:url({% static "layouts/xe_funeral/img/visual_byeokje.jpg" %})"></span>
-        <span class="mask"></span>
-    </div>    <!-- Swiper -->
-    <!-- BODY -->
-    <div class="body fixed-width sub none">
-        <!-- CONTENT -->
-        <div class="content" id="content">
+</div>
+<!--메인메뉴시작-->
+<div class="gnb_p">
+    <div class="language">
+        <strong title="ko">한국어</strong>
+        <button type="button" class="toggle">Select Language</button>
+        <ul class="selectLang">
+        </ul>
+    </div>
+    <div id="gnb">
+        <ul class="ul1">
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/Sangjo" class="a1"><span><img
+                        src="{% static "img/menu_btn/123.20151127183430.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/123.20151127183430.menu_normal_btn.png" %}'"
+                        alt="후불제 상조"
+                        onmouseover="this.src='{% static "img/menu_btn/123.20151127183441.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/123.20151127183451.menu_active_btn.png" %}'"/></span></a>
+            </li>
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/page_eGcd85" class="a1"><span><img
+                        src="{% static "img/menu_btn/28051.20151127182559.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/28051.20151127182559.menu_normal_btn.png" %}'"
+                        alt="한강이남권 납골당"
+                        onmouseover="this.src='{% static "img/menu_btn/28051.20151127182608.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/28051.20151127182617.menu_active_btn.png" %}'"/></span></a>
+            </li>
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/hallelujah04" class="a1"><span><img
+                        src="{% static "img/menu_btn/28036.20151127183123.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/28036.20151127183123.menu_normal_btn.png" %}'"
+                        alt="한강이북권 납골당"
+                        onmouseover="this.src='{% static "img/menu_btn/28036.20151127183132.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/28036.20151127183141.menu_active_btn.png" %}'"/></span></a>
+            </li>
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/forestpark" class="a1"><span><img
+                        src="{% static "img/menu_btn/28060.20151127184307.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/28060.20151127184307.menu_normal_btn.png" %}'"
+                        alt="수목(자연)장"
+                        onmouseover="this.src='{% static "img/menu_btn/28060.20151127184320.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/28060.20151127184328.menu_active_btn.png" %}'"/></span></a>
+            </li>
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/sub04_02" class="a1"><span><img
+                        src="{% static "img/menu_btn/27991.20151127183933.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/27991.20151127183933.menu_normal_btn.png" %}'"
+                        alt="수도권 공원묘지"
+                        onmouseover="this.src='{% static "img/menu_btn/27991.20151127183943.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/27991.20151127183952.menu_active_btn.png" %}'"/></span></a>
+            </li>
+            <li class="li1">
+                <a href="http://www.hallelujah.co.kr/page_Ljrb11" class="a1"><span><img
+                        src="{% static "img/menu_btn/28065.20151127203156.menu_normal_btn.png" %}"
+                        onmouseout="this.src='{% static "img/menu_btn/28065.20151127203156.menu_normal_btn.png" %}'"
+                        alt="묘지이장/개장"
+                        onmouseover="this.src='{% static "img/menu_btn/28065.20151127203206.menu_hover_btn.png" %}'"
+                        onmousedown="this.src='{% static "img/menu_btn/28065.20151127203249.menu_active_btn.png" %}'"/></span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="sn_body">
+    <!--바디시작-->
+    <div class="s_body">
+        <div>
 
-            <div class="page_title">
-                <span>벽제납골당</span>
-            </div>
-            <div class="tel_head">
-                <h1 class="tel_title" style="color:white;"><b style="color:white; font-size: 38px; text-shadow:1px 0 black,0 1px black,1px 0 black,0 1px black;">1522-4991</b> 24 시간 실시간 상담전화</h1>
-                <p style="color: white;">전문상담사가 직접 상담해드리는 빠르고 간편한 1:1상담을 이용해보시기 바랍니다.</p>
-            </div>
-            <ul class="info-count" style="position:absolute;right:-110px;top:-115px;width:500px;list-style:none;">
-                <li style="height: 110px;"><a href="tel:1522-4991"><img style="width: 50px" src="{% static "img/cons.png" %}" alt="친절상담"/><strong>친절상담</strong></a></li>
-                <li style="height: 110px;"><a href="tel:1522-4991"><img style="width: 50px" src="{% static "img/car.PNG" %}" alt="무료답사"/><strong>무료답사</strong></a></li>
-                <li style="height: 110px;"><a href="tel:1522-4991"><img style="width: 50px" src="{% static "img/people.PNG" %}" alt="무료동행"/><strong>무료동행</strong></a></li>
-            </ul>
-            <div class="sub_Menu">
-                <ul>
-                    <li class="active"><a href="http://www.nowand.org/byeokje">벽제납골당</a>
+            <div class="s_sub_title">
+                <h2>한강이북권 납골당 :</h2>
+                <ul class="locNav">
+                    <li class="active"><a href="http://www.hallelujah.co.kr/byeokje">벽제 기독교관</a>
                     </li>
-                    <li><a href="http://www.nowand.org/byeokje_info">벽제납골당 특장점</a>
+                    <li><a href="http://www.hallelujah.co.kr/sub02_03">대자동기독교관</a>
                     </li>
-                    <li><a href="http://www.nowand.org/byeokje_photo">벽제납골당 시설전경</a>
+                    <li><a href="http://www.hallelujah.co.kr/sub02_05">일산 기독교관</a>
+                    </li>
+                    <li><a href="http://www.hallelujah.co.kr/Paju">파주 기독교관</a>
+                    </li>
+                    <li><a href="http://www.hallelujah.co.kr/Uijeongbu">양주 기독교관</a>
+                    </li>
+                    <li><a href="http://www.hallelujah.co.kr/sub04_06">연천기독교관</a>
                     </li>
                 </ul>
             </div>
-            <div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;">
+        </div><!--본문타입시작-->
+        <div id="con" style="padding:20px 25px;">
+            <h2><span>할렐루야추모공원 벽제 기독교관</span></h2>
+            <div class="xe_content xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
                 <div style="padding:0px 0px 0px 0px !important;">
                     <div class="title-container">
-                        <h4>생활권에 가까운 아늑한 추모공원 납골당</h4>
-                        <span>고인을 모신 참배객들이 언제 어디서든 쉽게 찾아뵐수 있으며, 유가족들을 위한 편리한 주변시설을 갖추고 있습니다.</span></div>
+                        <h1>서울장묘문화원(벽제승화원) 내부에 위치해 있어<br/>안치당일 화장에서 안치까지 One-stop으로 이루어지며&nbsp;추후 방문 또한 매우 용이한 기독교추모관
+                        </h1>
+                    </div>
                 </div>
             </div>
-            <div class="xe-widget-wrapper " style="float:left;width:100%;margin:none;padding:none;">
+            <div class="xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0px 0px; background-repeat: repeat;">
                 <div style="*zoom:1;padding:0px 0px 0px 0px !important;">
-                    <div id="news" class="lof-slidecontent_news lof-snleft_news">
-                        <div class="preload" style="visibility: hidden; zoom: 1; opacity: 0; ">
-                            <div></div>
-                        </div>
-                        <div class="lof-main-wapper">
-                            <div class="lof-main-item_news"
-                                 style="display: block; visibility: visible; zoom: 1; opacity: 0.998621875; ">
-                                <img id="changed_img" src="{% static "files/thumbnails/179/980x500.crop.jpg" %}" title='추모공원' height="480px" width="980px">
+                    <script type="text/javascript">
+                        document.write('');
+                    </script>
+                    <div class="t"><img
+                            src="{% static "img/t.png" %}"></div>
+                    <div style="height: 415px;background-image: url(http://www.hallelujah.co.kr/widgets/contentslider/skins/Galleriffic/js/view_bg.gif);margin-bottom:60px">
+                        <div id="Galleriffic_818004649_page">
+                            <div id="container_Galleriffic_818004649">
+                                <div class="content_Galleriffic_818004649">
+                                    <div class="slideshow-container_Galleriffic_818004649">
+                                        <div id="loading_Galleriffic_818004649"
+                                             class="loader_Galleriffic_818004649"></div>
+                                        <div id="slideshow_Galleriffic_818004649" class="slideshow_Galleriffic_818004649">
+                                                <span class="image-wrapper_Galleriffic_818004649" style="opacity: 1;">
+                                                <img alt="추모관 #다음그림" id="changed_img" src="{% static "img/861/027/790x350.crop.jpg" %}">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="navigation-container_Galleriffic_818004649">
+                                    <div id="thumbsImg_Galleriffic_818004649" style="float: left; position: relative; right: -40%; height: 60px; margin-top: 355px;">
+                                        <a class="pageLink_Galleriffic_818004649 prev"
+                                           href="#" title="Previous Page"></a>
+                                        <ul class="thumbsImages_Galleriffic_818004649">
+                                            <li>
+                                                <a class="thumbImg_Galleriffic_818004649" name="0" title='벽제 기독교납골당 #다음그림'>
+                                                    <img class="mouse-hover" src="{% static "img/229/80x60.crop.jpg" %}" value="{% static "img/229/790x350.crop.jpg" %}"
+                                                         alt='기독교추모관 #1'/>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="thumbImg_Galleriffic_818004649" name="1" title='벽제 덕양구납골당 #다음그림'>
+                                                    <img class="mouse-hover" src="{% static "img/236/80x60.crop.jpg" %}" value="{% static "img/236/790x350.crop.jpg" %}"
+                                                         alt='벽제 덕양구납골당 #2'/>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="thumbImg_Galleriffic_818004649" name="2" title='벽제 기독교납골당 #다음그림'>
+                                                    <img class="mouse-hover" src="{% static "img/246/80x60.crop.jpg" %}" value="{% static "img/246/790x350.crop.jpg" %}"
+                                                         alt='추모관 #3'/>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="thumbImg_Galleriffic_818004649" name="3" title='벽제 기독교납골당 #다음그림'>
+                                                    <img class="mouse-hover" src="{% static "img/282/80x60.crop.jpg" %}" value="{% static "img/282/790x350.crop.jpg" %}"
+                                                         alt='추모관 #4'/>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="thumbImg_Galleriffic_818004649" name="4" title='벽제납골당 #다음그림'>
+                                                    <img class="mouse-hover" src="{% static "img/295/80x60.crop.jpg" %}" value="{% static "img/295/790x350.crop.jpg" %}"
+                                                         alt='기독교추모관 #5'/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a class="pageLink_Galleriffic_818004649 next" style="visibility: hidden;"
+                                           href="#" title="Next Page"></a>
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
                             </div>
-                        </div>
-                        <div class="lof-navigator-outer">
-                            <ul class="lof-navigator">
-                                <li style="height: 96px;">
-                                    <div>
-                                        <a><img class="mouse-hover" src="{% static "files/thumbnails/179/980x500.crop.jpg" %}" alt='추모공원'
-                                                height="480px" width="980px"></a>
-                                    </div>
-                                </li>
-                                <li style="height: 96px;">
-                                    <div>
-                                        <a><img class="mouse-hover" src="{% static "files/thumbnails/181/980x500.crop.jpg" %}" alt='추모공원'
-                                                height="480px" width="980px"></a>
-                                    </div>
-                                </li>
-                                <li style="height: 96px;">
-                                    <div>
-                                        <a><img class="mouse-hover" src="{% static "files/thumbnails/183/980x500.crop.jpg" %}" alt='추모공원'
-                                                height="480px" width="980px"></a>
-                                    </div>
-                                </li>
-                                <li style="height: 96px;">
-                                    <div>
-                                        <a><img class="mouse-hover" src="{% static "files/thumbnails/185/980x500.crop.jpg" %}" alt='추모공원'
-                                                height="480px" width="980px"></a>
-                                    </div>
-                                </li>
-                                <li style="height: 96px;">
-                                    <div>
-                                        <a><img class="mouse-hover" src="{% static "files/thumbnails/187/980x500.crop.jpg" %}" alt='추모공원'
-                                                height="480px" width="980px"></a>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <script type="text/javascript">
                         jQuery(document).ready(function ($) {
-                            $(".mouse-hover").hover(function(){
-                                $("#changed_img").attr("src", $(this).attr('src'));
+                            $(".mouse-hover").hover(function () {
+                                $("#changed_img").attr("src", $(this).attr('value'));
                             });
                         });
                     </script>
                 </div>
             </div>
-            <div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;">
+            <div class="xe_content xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
                 <div style="padding:0px 0px 0px 0px !important;">
-                    <div id="box_int">
-                        <ul class="boxone_int">
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/47209a5a0d84e3a165dbf624588544c8.jpg" %}"
-                                    alt="추모공원" width="700" height="525" style=""/>
-                                <h3>가깝게 찾아올 수 있는 명당</h3><span>명당의 기본 조건인 배산임수 지형에 위치한 추모공원은 언제 어디서든 가깝게 찾아올 수 있는 명당, 좀 더 편안하고 품위있게 영원토록 고인으 모시고 싶은 마음은 편치않는 우리 모두의 마음일 것입니다.</span>
+                    <div class="tel00"><img src="{% static "img/tel.png" %}" alt="" style=""/></div>
+                </div>
+            </div>
+            <div class="xe_content xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
+                <div style="padding:0px 0px 0px 0px !important;">
+                    <section class="connect">
+                        <ul>
+                            <li>
+                                <a href="#" class="ico"><i class="xi-user"></i><span class="blind">개인단</span></a>
+                                <h5>관리비 5년 30만원</h5><h4>개인단 사용료</h4>
+                                <p>￦1,000,000원 ~ ￦8,500,000원</p>
                             </li>
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/0a6efd9e31294fb465b45109f7136c6a.jpg" %}"
-                                    width="700" height="525" style=""/>
-                                <h3>안치를 위한 최적의 장소</h3><span>브론즈 재질과 강화유리, 대리석을 사용한 안치단이 있습니다. 이는 나무 안치단의 단점인, 화재, 습도, 균열 등의 문제에서 벗어나 오랫동안 장기적으로 안치할 수 있는 시스템을 운영</span>
-                            </li>
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/f215bc7e83167891d24fda10bb99735d.jpg" %}"
-                                    alt="22003086.jpg" width="700" height="525" style=""/>
-                                <h3>제례시설 및 휴게시설</h3><span>각 추모시설마다 종교별 제례실 및 예배실을 마련하여 제례를 지낼 수 있고 실내, 실외에 마련된 휴게시설 및 각 층마다 배치된 오픈형 휴게공간은 방문객의 품격과 편안함을 느낄 수 있게 해 주는 공간</span>
-                            </li>
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/941421707b19eed65c92a02824d2a52a.jpg" %}"
-                                    alt="22003078.jpg" width="700" height="525" style=""/>
-                                <h3>자연채광이 가능한 원형돔</h3><span>1년 365일 자연채광이 가능한 추모공원 중앙 원형돔 설계하여 고인에게 자연의 빛을 전달, 안치실 내부가 밝고 넓은 시야를 제공</span>
-                            </li>
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/292731ee8291bd38416770a4732ef9d2.jpg" %}"
-                                    alt="22003078.jpg" width="700" height="525" style=""/>
-                                <h3>추후 방문이 용이한 교통편</h3><span>벽제화장장 내부에 위치해 있어 안치당일 화장에서 안치까지 One-stop으로 이루어지며, 구파발과 자동차로 10분, 서울외곽순환도로 통일로 I.C 3분거리로 추후 방문 또한 매우 용이합니다.</span>
-                            </li>
-                            <li><img
-                                    src="{% static "files/attach/images/73/073/f128ee66165fbd8d6bd9e69b6d419688.jpg" %}"
-                                    alt="22003078.jpg" width="700" height="525" style=""/>
-                                <h3>최고급 납골시설</h3><span>고귀한 분을 소중히 모시기에 충분한 수려하고 품격있는 외관, 항온, 항습을 유지하는 건축설계로 쾌적한 환경 및 청결을 유지하였습니다.</span>
+                            <li>
+                                <a href="#" class="ico"><i class="xi-users"></i><span class="blind">부부단</span></a>
+                                <h5>관리비 5년 60만원</h5><h4>부부단 사용료</h4>
+                                <p>￦3,500,000원 ~ ￦17,000,000원</p>
                             </li>
                         </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
+                <div style="*zoom:1;padding:0px 0px 0px 0px !important;">
+                    <link href="{% static "js/DD_belatedPNG_0.0.8a-min.js" %}" rel="stylesheet">
+                    <script>
+                      DD_belatedPNG.fix('img');
+                    </script>
+                    <div id="ptyPoto988559930">
+                        <div class="ptyPoto988559930">
+                            <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27690">기독교추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/690/027/76f864a5378473d4d42a673db2edb089.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/690/027/270x270.crop.jpg?20150606163343"
+                                     width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto988559930"><a href="27690"></a></p>
+                        </div>
+                        <div class="ptyPoto988559930">
+                            <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27692">기독교추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/692/027/81af307f60cb7e9385732d7777088504.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/692/027/270x270.crop.jpg?20150606163343"
+                                     width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto988559930"><a href="27692"></a></p>
+                        </div>
+                        <div class="ptyPoto988559930">
+                            <div class="ptyPoto-heading textT1_ptyPoto988559930"><a href="27694">기독교추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/480/694/027/a6d808b704a74945850cab6c93b6ec79.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/694/027/270x270.crop.jpg?20150606163343"
+                                     width="270" height="270" title='기독교추모공원' alt='기독교추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto988559930"><a href="27694"></a></p>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function ($) {
+                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
+                            $(".fade").fadeTo(1, 1);
+                            $(".fade").hover(function () {
+                                $(this).fadeTo("fast", 0.33);
+                            }, function () {
+                                $(this).fadeTo("slow", 1);
+                            });
+                            $(".ptyPoto988559930").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
+                            $("a[rel^='prettyPhoto']").each(function () {
+                                var $image = jQuery(this).contents("img");
+                                $newclass = 'no_image';
+                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
+                                else $(this).removeClass("fade");
+                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
+                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
+                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
+                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
+                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
+                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
+                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
+                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
+                                $pos = $image.position();
+                                $(this).addClass($newclass).css({
+                                    height: $height,
+                                    width: $width,
+                                    top: $pos.top,
+                                    left: $pos.left
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="xe_content xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 20px 0px 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0% 0%; background-repeat: repeat;">
+                <div style="padding:0px 0px 0px 0px !important;">
+                    <div class="title-container">
+                        <h1>고급화와 차별화를 위하여 중앙원형돔을 설계하여 1년 365일 고인에게 자연의 빛을 전달할 수 있도록 하였고
+                            풍광이 좋은 지상 1,2층에 안치실이 위치하고 있으며
+                            항온 항습을 유지하는 건축설계로 보다 쾌적한 환경 및 청결을 유지하도록 합니다.</h1>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /CONTENT -->
-        <div style="color:white">
-            <h1>벽제납골당</h1>
-            <h2>벽제납골당</h2>
-            <h3>벽제납골당</h3>
-        </div>
-    </div>
-    <!-- END:BODY -->
-    <footer class="footer">
-        <div class="f_info_area">
-            <div class="f_info2">
-                <div class="site_map">
-                    <ul>
-                        <li>
-                            <a href="http://www.nowand.org/gimpo">김포 청솔수목장</a>
-                        </li>
-                        <li>
-                            <a href="http://www.nowand.org/byeokje">벽제중앙추모공원</a>
-                        </li>
-                        <li>
-                            <a href="http://www.nowand.org/">나우앤드</a>
-                        </li>
-                        <li>
-                            <a href="http://www.nowand.org/yangju">양주 하늘안추모공원</a>
-                        </li>
-                        <li>
-                            <a href="http://www.nowand.org/namyangju">남양주 에덴추모공원</a>
-                        </li>
-                    </ul>
+            <div class="xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 10px 0px 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0px 0px; background-repeat: repeat;">
+                <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><!--[if IE 6]>
+<script src="/widgets/contentslider/skins/prettyPhoto/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('img');
+</script>
+<![endif]-->
+
+                    <div id="ptyPoto1322998220">
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28857">벽제추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/857/028/365e76f6a69949e17e4a726057ba3127.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/857/028/270x200.crop.jpg?20180203091007"
+                                     width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28857"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28855">벽제추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/855/028/d88f2adc25dc086e6b673d585bc436f1.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/855/028/270x200.crop.jpg?20180203091007"
+                                     width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28855"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28853">벽제추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/853/028/ab070a27e6cb1436586ec100e659c486.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/853/028/270x200.crop.jpg?20180203091007"
+                                     width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28853"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="28851">벽제추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/851/028/46befbacd4a0f80acccbf4453f8c9d18.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/851/028/270x200.crop.jpg?20180203091007"
+                                     width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="28851"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="236">벽제 덕양구납골당</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/236/50891e927f69a6fb66fe2ae11fedcc90.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/236/270x200.crop.jpg?20180203091008"
+                                     width="270" height="200" title='벽제 덕양구납골당' alt='벽제 덕양구납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="236"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="321">벽제납골당</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/321/fff89451f7ac95ceb64ada948dedbe20.JPG"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/321/270x200.crop.jpg?20150415144615"
+                                     width="270" height="200" title='벽제납골당' alt='벽제납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="321"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="790">기독교납골당</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/790/e633e97b6206ed757f2bf5f798dd133d.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/790/270x200.crop.jpg?20150415144555"
+                                     width="270" height="200" title='기독교납골당' alt='기독교납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="790"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="1183">추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/183/001/fc2a5fe129d2377aa9542f587de427a6.JPG"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/183/001/270x200.crop.jpg?20150415144536"
+                                     width="270" height="200" title='추모공원' alt='추모공원 by 할렐루야' class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="1183"></a></p>
+                        </div>
+                        <div class="ptyPoto1322998220">
+                            <div class="ptyPoto-heading textT1_ptyPoto1322998220"><a href="775">벽제추모공원</a></div>
+                            <div class="headmeta">기독교납골당</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/168/775/ba293e5cf64c9d55905703b98a5c15ce.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/775/270x200.crop.jpg?20150415144505"
+                                     width="270" height="200" title='벽제추모공원' alt='벽제추모공원 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1322998220"><a href="775"></a></p>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function ($) {
+                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
+                            $(".fade").fadeTo(1, 1);
+                            $(".fade").hover(function () {
+                                $(this).fadeTo("fast", 0.33);
+                            }, function () {
+                                $(this).fadeTo("slow", 1);
+                            });
+                            $(".ptyPoto1322998220").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
+                            $("a[rel^='prettyPhoto']").each(function () {
+                                var $image = jQuery(this).contents("img");
+                                $newclass = 'no_image';
+                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
+                                else $(this).removeClass("fade");
+                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
+                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
+                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
+                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
+                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
+                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
+                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
+                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
+                                $pos = $image.position();
+                                $(this).addClass($newclass).css({
+                                    height: $height,
+                                    width: $width,
+                                    top: $pos.top,
+                                    left: $pos.left
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </div>
-        </div>
-        <div class="f_cr_area">
-            <div class="copyright">
-                <ul class="info">
-                    <li>상호 : 주식회사 나우앤드 / 사업자번호 : 128-87-06832 / 주소 : (우) 10278 경기도 고양시 덕양구 통일로414번길 196(대자동)</li>
-                    <li>대표전화 : 1522-4991 / 24시간 상담문의 : 010-0000-0000 / 팩스 : 02-381-4992 / e-메일 : gidal8707@naver.com
-                    </li>
-                </ul>
-                <span class="bidam">
-Copyright @ 2016~2020 NOWAND.All rights reserved.
-</span>
+            <div class="xe-widget-wrapper "
+                 style="border: 0px solid rgb(255, 255, 255); margin: 10px 0px 0px; width: 100%; float: left; background-image: none; background-color: transparent; background-position: 0px 0px; background-repeat: repeat;">
+                <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><!--[if IE 6]>
+<script src="/widgets/contentslider/skins/prettyPhoto/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('img');
+</script>
+<![endif]-->
+
+                    <div id="ptyPoto1317613560">
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28048">추모공원 납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/048/028/ab82168e8e7569c021012b55fed8bba2.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/048/028/270x200.crop.jpg?20150607113835"
+                                     width="270" height="200" title='추모공원 납골당' alt='추모공원 납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28048"></a></p>
+                        </div>
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28046">추모공원납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/046/028/3b4111a245c89feabf5041fa55c20901.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/046/028/270x200.crop.jpg?20150607113643"
+                                     width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28046"></a></p>
+                        </div>
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28044">추모공원납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/044/028/075a7e9c1c018f6c37141690753a8fee.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/044/028/270x200.crop.jpg?20150607113643"
+                                     width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28044"></a></p>
+                        </div>
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28042">추모공원납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/042/028/b6454468eaaafa8238c0e8c33b7d18d0.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/042/028/270x200.crop.jpg?20150607113643"
+                                     width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28042"></a></p>
+                        </div>
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28040">추모공원납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/040/028/da240f6eddd3a7299b326b175575da31.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/040/028/270x200.crop.jpg?20150607113643"
+                                     width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28040"></a></p>
+                        </div>
+                        <div class="ptyPoto1317613560">
+                            <div class="ptyPoto-heading textT1_ptyPoto1317613560"><a href="28038">추모공원납골당</a></div>
+                            <div class="headmeta">기독교공원묘지</div>
+                            <div class="previewimage">
+                                <a href="http://www.hallelujah.co.kr/./files/attach/images/799/038/028/6fa00f1f6456dda2b67cd076f13e7e01.jpg"
+                                   rel="prettyPhoto[gallery2]"/>
+                                <img src="http://www.hallelujah.co.kr/files/thumbnails/038/028/270x200.crop.jpg?20150607113643"
+                                     width="270" height="200" title='추모공원납골당' alt='추모공원납골당 by 할렐루야'
+                                     class="rounded-all fade"/>
+                                </a>
+                            </div>
+                            <p class="ptyPoto-text textC1_ptyPoto1317613560"><a href="28038"></a></p>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function ($) {
+                            if ($.browser.msie && $.browser.version < 7) return; // Don't execute code if it's IE6 or below cause it doesn't support it.
+                            $(".fade").fadeTo(1, 1);
+                            $(".fade").hover(function () {
+                                $(this).fadeTo("fast", 0.33);
+                            }, function () {
+                                $(this).fadeTo("slow", 1);
+                            });
+                            $(".ptyPoto1317613560").find("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default'});
+                            $("a[rel^='prettyPhoto']").each(function () {
+                                var $image = jQuery(this).contents("img");
+                                $newclass = 'no_image';
+                                if ($(this).attr('href').toLowerCase().match(/youtube\.com\/watch/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/vimeo\.com/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(mov|swf)/i)) $newclass = 'lightbox_video';
+                                else if ($(this).attr('href').toLowerCase().match(/(jpg|gif|jpeg|png)/i)) $newclass = 'lightbox_image';
+                                else $(this).removeClass("fade");
+                                var $padding_x = parseInt($image.css('padding-left')) + parseInt($image.css('padding-right')),
+                                    $padding_y = parseInt($image.css('padding-top')) + parseInt($image.css('padding-bottom')),
+                                    $margin_x = parseInt($image.css('margin-left')) + parseInt($image.css('margin-right')),
+                                    $margin_y = parseInt($image.css('margin-top')) + parseInt($image.css('margin-bottom')),
+                                    $border_x = parseInt($image.css('border-left-width')) + parseInt($image.css('border-right-width')),
+                                    $border_y = parseInt($image.css('border-top-width')) + parseInt($image.css('border-bottom-width'));
+                                $height = parseInt($image.height()) + $margin_x + $padding_x + $border_x;
+                                $width = parseInt($image.width()) + $margin_y + $padding_y + $border_y;
+                                $pos = $image.position();
+                                $(this).addClass($newclass).css({
+                                    height: $height,
+                                    width: $width,
+                                    top: $pos.top,
+                                    left: $pos.left
+                                });
+                            });
+                        });
+                    </script>
+                </div>
             </div>
-        </div>
-    </footer>
+        </div><!--서브타입시작-->
+        <!--서브타입끝-->
+    </div>
+    <!--바디끝-->
 </div>
-<!-- TOP -->
-<a href="#" class="btn_top"><i class="xi-angle-up"><span class="blind">위로</span></i></a>
-<!-- /TOP -->
-<!-- Login widget -->
-<section class="login_widget" style="display:none">
-    <div class="ly_dimmed"></div>
-    <div class="signin">
-        <div class="login-header">
-            <h1>LOGIN</h1>
+<div class="sn_bottom">
+    <div class="s_bottom">
+        <div class="footer_logo">
+            <a href="./"><img
+                    src="http://www.hallelujah.co.kr/files/attach/images/27546/5287e19603b8b671e4fb8030eec0cb11.png"
+                    alt="할렐루야추모공원" border="0" class="iePngFix"/></a>
         </div>
-        <div class="login-body">
-            <form action="/index.php?act=procMemberLogin" method="post" autocomplete="off"><input type="hidden"
-                                                                                                  name="error_return_url"
-                                                                                                  value="/byeokje"/><input
-                    type="hidden" name="mid" value="byeokje"/><input type="hidden" name="vid" value=""/>
-                <input type="hidden" name="act" value="procMemberLogin"/>
-                <input type="hidden" name="success_return_url" value="http://nowand.org/byeokje"/>
-                <input type="hidden" name="xe_validator_id" value="layouts/xedition/layout/1"/>
-                <fieldset>
-                    <legend class="blind">로그인</legend>
-                    <div class="control-group">
-                        <div class="group">
-                            <input type="text" name="user_id" id="uemail" required="true"/>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label class="info_label" for="uemail">아이디</label>
-                        </div>
-                        <div class="group">
-                            <input type="password" name="password" id="upw" required="true"/>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label class="info_label" for="upw">비밀번호</label>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="chk_label" for="keepid_opt">
-                            <input type="checkbox" name="keep_signed" id="keepid_opt" value="Y"/>
-                            <span class="checkbox"></span> 로그인 유지 </label>
-                        <div id="warning">
-                            <p style="text-align:right;"><i class="xi-close"></i></p>
-                            <p>브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다.<br/>로그인 유지 기능을 사용할 경우 다음 접속부터는 로그인할 필요가 없습니다.<br/>단, 게임방,
-                                학교 등 공공장소에서 이용 시 개인정보가 유출될 수 있으니 꼭 로그아웃을 해주세요.</p>
-                            <div class="edge"></div>
-                        </div>
-                        <button type="submit" class="btn_submit">로그인</button>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="footer">
+			            <span>
+			등록번호 : 128-87-06832 / 상호 : 주) 나우앤드 / 주소 : 경기도 고양시 덕양구 통일로414번길 196 (대자동)<br>
+			대표전화 : 1522-4991 / 팩스 : 02-381-4992 / 담당직통전화 : 010-8999-4133</span> <span><br/>Copyright (c) 2010 www.hallelujah.co.kr All Right Reserved.</span>
         </div>
     </div>
-    <script>
-        jQuery(function ($) {
-            var keep_msg = $("#warning");
-            $(".chk_label").on("mouseenter mouseleave focusin focusout", function (e) {
-                if (e.type == "mouseenter" || e.type == "focusin") {
-                    keep_msg.show();
-                } else {
-                    keep_msg.hide();
-                }
-            });
-            $("#ly_login_btn, #ly_btn").click(function () {
-                $(".login_widget").show();
-                return false;
-            });
-            $(".btn_ly_popup").click(function () {
-                $(".login_widget").hide();
-                return false;
-            });
-            $("input").blur(function () {
-                var $this = $(this);
-                if ($this.val()) {
-                    $this.addClass("used");
-                } else {
-                    $this.removeClass("used");
-                }
-            });
-        });
-    </script>
-</section><!-- /Login widget -->
-<!-- ETC -->
+</div>
+<!-- loginWindow -->
+<div id="loginWindow" class="loginWindow">
+    <!-- class="loginWindow" | class="loginWindow open" -->
+    <span class="modalWindow"></span>
+    <div id="loginLayer" class="loginLayer loginTypeA">
+        <!-- class="loginLayer loginTypeA" | class="loginLayer loginTypeB" -->
+        <button type="button" class="close" onclick="document.getElementById('loginWindow').style.display='none'"
+                accesskey="X"><span>Close Login Layer</span></button>
+        <form action="" method="post" class="typeA" id="commonLogin" onsubmit="return procFilter(this, login)"><input
+                type="hidden" name="error_return_url" value="/Goyang"/><input type="hidden" name="act" value=""/><input
+                type="hidden" name="mid" value="Goyang"/><input type="hidden" name="vid" value=""/>
+            <fieldset>
+                <legend>XE Login</legend>
+                <dl>
+                    <dt><label for="uid">아이디</label></dt>
+                    <dd><input name="user_id" type="text" class="inputText" id="uid"/></dd>
+                    <dt><label for="upw">비밀번호</label></dt>
+                    <dd><input name="password" type="password" class="inputText" id="upw"/></dd>
+                </dl>
+                <p class="keep"><input name="keep_signed" type="checkbox" id="keepA" value="Y" class="inputCheck"
+                                       onclick="if(this.checked) return confirm('브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다.\n\n로그인 유지 기능을 사용할 경우 다음 접속부터는 로그인할 필요가 없습니다.\n\n단, 게임방, 학교 등 공공장소에서 이용 시 개인정보가 유출될 수 있으니 꼭 로그아웃을 해주세요.');"/><label
+                        for="keepA">로그인 유지</label></p>
+                <span class="loginButton"><input name="" type="submit" value="로그인"/></span>
+            </fieldset>
+        </form>
+        <ul class="help">
+            <li class="join"><a
+                    href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberSignUpForm">회원가입</a></li>
+            <li class="find"><a href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberFindAccount">ID/PW
+                찾기</a></li>
+            <li class="find"><a href="http://www.hallelujah.co.kr/index.php?mid=Goyang&amp;act=dispMemberResendAuthMail">인증메일
+                재발송</a></li>
+        </ul>
+        <button type="button" class="close" onclick="document.getElementById('loginWindow').style.display='none'"
+                accesskey="X"><span>Close Login Layer</span></button>
+    </div>
+</div>
+<!-- /loginWindow -->
+<!-- POPUP -->
+
+
+<div id="outdated"></div>
+<script>
+    jQuery(document).ready(function () {
+        outdatedBrowser({
+            lowerThan: 'IE8', bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: 'addons/outdated_browser/lang/ko.html'
+        })
+    })
+</script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript"> if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "12040dbee9a17f4";
+wcs_do(); </script><!-- ETC -->
 <div class="wfsr"></div>
+<script src="/files/cache/js_filter_compiled/ec489c01514ae15608bd00f218ee0164.ko.compiled.js?20200217143243"></script>
+<script src="/addons/outdated_browser/js/outdatedbrowser.min.js?20151127152733"></script>
 </body>
 </html>
