@@ -1,0 +1,10 @@
+django
+jinja2-django-tags
+seaborn
+pandas
+beautifulsoup4
+requests
+lxml
+numpy
+pymongo
+elasticsearch
