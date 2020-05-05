@@ -262,6 +262,26 @@
                         alt="한강이북권 납골당"
                         onmouseover="this.src='{% static "img/menu_btn/28036.20151127183132.menu_hover_btn.png" %}'"
                         onmousedown="this.src='{% static "img/menu_btn/28036.20151127183141.menu_active_btn.png" %}'"/></span></a>
+                <ul class="ul2" style="display: none;">
+                    <li class="li2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/byeokje" class="a2"><span>벽제 기독교관</span></a>
+                    </li>
+                    <li class="li2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/daeja" class="a2"><span>대자동기독교관</span></a>
+                    </li>
+                    <li class="li2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/ilsan" class="a2"><span>일산 기독교관</span></a>
+                    </li>
+                    <li class="li2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/paju" class="a2"><span>파주 기독교관</span></a>
+                    </li>
+                    <li class="li2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/yangju" class="a2"><span>양주 기독교관</span></a>
+                    </li>
+                    <li class="li2on2">
+                        <a href="http://www.hallelujah-memorialpark.com/north-hanriver/yeoncheon" class="a2"><span>연천기독교관</span></a>
+                    </li>
+                </ul>
             </li>
             <li class="li1">
                 <a href="http://www.hallelujah-memorialpark.com/forestpark" class="a1"><span><img
@@ -412,6 +432,13 @@
                     <div style="clear: both;"></div>
                     <script type="text/javascript">
                         jQuery(document).ready(function ($) {
+                            $(".li1").hover(function() {
+                               $(this).addClass("hover");
+                               $(this).find(".ul2").css("display", "block");
+                            }, function(){
+                                $(this).removeClass("hover");
+                                $(this).find(".ul2").css("display", "none");
+                            });
                             $(".fade").fadeTo(1, 1);
                             $(".fade").hover(function () {
                                 $(this).fadeTo("fast", 0.33);
