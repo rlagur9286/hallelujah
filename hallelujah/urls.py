@@ -23,6 +23,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.render_page, {'page_name': 'index'}),
+    url(r'^sangjo$', views.render_page, {'page_name': 'sangjo'}),
 
     url(r'^north-hanriver$', views.render_page, {'page_name': 'north-hanriver'}),
     url(r'^north-hanriver/daeja/', views.render_page, {'page_name': 'daeja'}),
