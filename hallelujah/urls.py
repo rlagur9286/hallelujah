@@ -23,21 +23,14 @@ from django.views.generic import TemplateView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.render_page, {'page_name': 'index'}),
-    url(r'^byeokje/', views.render_page, {'page_name': 'byeokje'}),
-    url(r'^byeokje_info/', views.render_page, {'page_name': 'byeokje_info'}),
-    url(r'^byeokje_photo/', views.render_page, {'page_name': 'byeokje_photo'}),
 
-    url(r'^gimpo/', views.render_page, {'page_name': 'gimpo'}),
-    url(r'^gimpo_info/', views.render_page, {'page_name': 'gimpo_info'}),
-    url(r'^gimpo_photo/', views.render_page, {'page_name': 'gimpo_photo'}),
-
-    url(r'^yangju/', views.render_page, {'page_name': 'yangju'}),
-    url(r'^yangju_info/', views.render_page, {'page_name': 'yangju_info'}),
-    url(r'^yangju_photo/', views.render_page, {'page_name': 'yangju_photo'}),
-
-    url(r'^namyangju/', views.render_page, {'page_name': 'namyangju'}),
-    url(r'^namyangju_info/', views.render_page, {'page_name': 'namyangju_info'}),
-    url(r'^namyangju_photo/', views.render_page, {'page_name': 'namyangju_photo'}),
+    url(r'^north-hanriver$', views.render_page, {'page_name': 'north-hanriver'}),
+    url(r'^north-hanriver/daeja/', views.render_page, {'page_name': 'daeja'}),
+    url(r'^north-hanriver/ilsan/', views.render_page, {'page_name': 'ilsan'}),
+    url(r'^north-hanriver/paju/', views.render_page, {'page_name': 'paju'}),
+    url(r'^north-hanriver/byeokje/', views.render_page, {'page_name': 'byeokje'}),
+    url(r'^north-hanriver/yangju/', views.render_page, {'page_name': 'yangju'}),
+    url(r'^north-hanriver/yeoncheon/', views.render_page, {'page_name': 'yeoncheon'}),
 
     url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="project_robots_file"),
 ]
