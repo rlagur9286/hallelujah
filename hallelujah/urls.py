@@ -39,6 +39,10 @@ urlpatterns = [
     url(r'^south-hanriver/yongin$', views.render_page, {'page_name': 'south-yongin'}),
     url(r'^south-hanriver/anseong$', views.render_page, {'page_name': 'south-anseong'}),
 
+    url(r'^burial$', views.render_page, {'page_name': 'move'}),
+    url(r'^burial/move$', views.render_page, {'page_name': 'move'}),
+    url(r'^burial/open$', views.render_page, {'page_name': 'open'}),
+
     url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="project_robots_file"),
 ]
 
