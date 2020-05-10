@@ -37,6 +37,8 @@ urlpatterns = [
     url(r'^forestpark/gimpo$', views.render_page, {'page_name': 'forestpark-gimpo'}),
     url(r'^forestpark/yangju$', views.render_page, {'page_name': 'forestpark-yangju'}),
     url(r'^forestpark/anseong$', views.render_page, {'page_name': 'forestpark-anseong'}),
+    url(r'^forestpark/yongin$', views.render_page, {'page_name': 'forestpark-yongin'}),
+    url(r'^forestpark/yeoncheon$', views.render_page, {'page_name': 'forestpark-yeoncheon'}),
 
     url(r'^south-hanriver$', views.render_page, {'page_name': 'south-hanriver'}),
     url(r'^south-hanriver/bundang$', views.render_page, {'page_name': 'south-bundang'}),
