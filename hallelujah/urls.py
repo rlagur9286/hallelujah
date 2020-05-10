@@ -36,6 +36,7 @@ urlpatterns = [
     url(r'^forestpark$', views.render_page, {'page_name': 'forestpark'}),
     url(r'^forestpark/gimpo$', views.render_page, {'page_name': 'forestpark-gimpo'}),
     url(r'^forestpark/yangju$', views.render_page, {'page_name': 'forestpark-yangju'}),
+    url(r'^forestpark/anseong$', views.render_page, {'page_name': 'forestpark-anseong'}),
 
     url(r'^south-hanriver$', views.render_page, {'page_name': 'south-hanriver'}),
     url(r'^south-hanriver/bundang$', views.render_page, {'page_name': 'south-bundang'}),
