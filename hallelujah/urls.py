@@ -47,6 +47,8 @@ urlpatterns = [
     url(r'^south-hanriver/anseong$', views.render_page, {'page_name': 'south-anseong'}),
 
     url(r'^cemetery$', views.render_page, {'page_name': 'cemetery'}),
+    url(r'^cemetery/yongin$', views.render_page, {'page_name': 'cemetery-yongin'}),
+    url(r'^cemetery/gwangju$', views.render_page, {'page_name': 'cemetery-gwangju'}),
 
     url(r'^burial$', views.render_page, {'page_name': 'move'}),
     url(r'^burial/move$', views.render_page, {'page_name': 'move'}),
